@@ -1,6 +1,27 @@
-.button
+.button, .button-blue
    @include button()
    @include animations()
 
-.button:hover
+
+.button:after
+   content: '→'
+   width: 30px
+   height: 30px
+   color: $white
+   display: inline-block
+
+.button:hover,  .button-blue:hover
    @include buttonHover()
+
+.button:active,  .button-blue:active
+   background: $black
+
+.button
+   background: $dark-green
+
+.button-blue
+   background: $blue
+
+ 
+
+

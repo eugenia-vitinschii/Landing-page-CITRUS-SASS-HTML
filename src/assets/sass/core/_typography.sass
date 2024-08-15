@@ -1,18 +1,46 @@
-.heading
-   font-size: $heading
-   margin-top: $margin-sm
-   color: $dark-blue
+.big-heading-white, .big-heading-green
+   font-size: $big-heading
+   text-align: center
 
-.subheading
+.heading-white, .heading-green
+   font-size: $heading
+   padding-top: $margin-sm
+   text-align: center
+
+.subheading-white, .subheading-green
    font-size: $subheading
    margin-top: $margin-sm
-   color: $dark-blue
+
    
-.body-text
+.body-text-white, .body-text-green
    font-size: $body-text
    margin-top: $margin-sm
-   color: $dark-blue
+   line-height: 20px
 
-a 
+
+
+@media (max-width: 767px)
+   .big-heading-white, .big-heading-green
+      font-size: $big-heading-sm
+   
+   .heading-white, .heading-green
+      font-size: $heading-sm
+   
+   .subheading-white, .subheading-green
+      font-size: $subheading-sm
+   
+   .body-text-white, .body-text-green
+      font-size: $body-text-sm
+   
+
+.big-heading-white, .heading-white, .subheading-white, .body-text-white
    color: $white
    
+.big-heading-green, .heading-green, .subheading-green, .body-text-green
+   color: $dark-green
+
+.bold
+   font-weight: bold
+   
+a 
+   color: $white

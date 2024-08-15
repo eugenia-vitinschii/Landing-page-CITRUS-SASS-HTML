@@ -1,0 +1,97 @@
+.reviews 
+   background: $light-brown
+   &__top 
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+   &__top-circle
+         width: 300px
+         animation: $circle
+   &__top-leaf
+         img
+            width: 200px
+            height: 200px
+            margin-right: $margin-top
+            animation: $leaf-top
+   &__container 
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+   &__item 
+      display: flex
+      flex-direction: column
+      width: 400px
+  
+      padding: 10px
+   &__img 
+      img
+         width: 200px
+   &__text 
+      width: 300px
+      height: 200px
+   &__stars 
+      background-image: url('./../img/star-point_icon-icons.com_68483.svg')  
+      width: 150px
+      height: 30px
+      margin-top: 5px
+      fill: #95ca3a
+
+
+@media (max-width: 987px)
+   .reviews 
+      &__top-circle
+         width: 100px
+      &__top-leaf
+         img
+            width: 100px
+            height: 100px
+
+      &__container 
+         display: flex
+         flex-direction: column
+      &__item 
+         display: flex
+         flex-direction: row
+         width: 100%
+   
+         padding: 10px
+         margin-top: $margin-top
+      &__message
+         display: flex
+         flex-direction: column
+      &__img 
+         img
+            width: 300px
+      &__text 
+         width: 100%
+         height: 180px 
+      &__stars
+         margin-top: -10px
+
+
+@media (max-width: 645px)
+   .reviews 
+      &__item 
+         flex-direction: column
+         align-items: center
+
+            
+      
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+ 
