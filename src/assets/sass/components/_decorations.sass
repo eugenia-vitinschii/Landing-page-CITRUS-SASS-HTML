@@ -1,0 +1,30 @@
+.top-circle
+   width: 300px
+   animation: $circle
+
+.top-leaf, .bottom-leaf
+   img
+      width: 200px
+      height: 200px
+      margin-right: $margin-top
+
+.top-leaf
+
+   img
+      animation: $leaf-top
+
+.bottom-leaf
+   float: right
+   img
+      animation: $leaf-bottom
+
+
+
+@media (max-width: 987px)
+   .top-circle
+      width: 100px
+
+   .top-leaf, .bottom-leaf
+      img
+         width: 100px
+         height: 100px

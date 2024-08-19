@@ -1,28 +1,51 @@
 $circle: circle 5s linear infinite
 
 @keyframes circle 
+	0% 
+		transform: rotate(0deg)
+	
+	25% 
+		transform: rotate(-50deg)
 	50% 
-		transform: rotate(100deg)
-	
+		transform: rotate(50deg)
 	100% 
-		transform: rotate(-100deg)
-	
+		transform: rotate(0deg)
 
 $leaf-top: leaf-top 10s linear infinite
+$leaf-bottom: leaf-top 10s linear infinite
+
+
 
 @keyframes leaf-top
 	0% 
-		opacity: 0
+		transform: translate(0px, 0px)
 	
-	10% 
-		transform: translateX(-60px)
+	25% 
+		transform: translate(18px, 43px)
 		opacity: 1
 	
 	50% 
-		transform: rotate(40deg)
+		transform: translate(18px, 0px)
 		opacity: 1
 	
 	100% 
-		transform: translateY(30px)
+		transform: translate(0px, 0px)
+		opacity: 1
+	
+
+	@keyframes leaf-bottom
+	0% 
+		transform: translate(0px, 0px)
+	
+	25% 
+		transform: translate(-52px, -5px)
+		opacity: 1
+	
+	50% 
+		transform: translate(-52px, 47px)
+		opacity: 1
+	
+	100% 
+		transform: translate(0px, 0px)
 		opacity: 1
 	

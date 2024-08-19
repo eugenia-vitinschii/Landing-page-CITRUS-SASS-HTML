@@ -1,0 +1,20 @@
+.step
+   background: $light-brown
+   &__wrapper
+      display: flex 
+      align-items: center
+      justify-content: center
+   &__text
+      width: 400px
+      margin-left: $margin-top
+   &__links
+      margin-top: 60px
+   &__img
+      img
+         width: 300px
+
+@media (max-width: 714px)
+   .step
+      &__wrapper
+         flex-direction: column
+
