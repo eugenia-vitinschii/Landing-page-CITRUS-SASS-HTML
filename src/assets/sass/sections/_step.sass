@@ -8,10 +8,11 @@
       width: 400px
       margin-left: $margin-top
    &__links
-      margin-top: 60px
+      @include link-wrapper()
    &__img
+      @include img-container()
       img
-         width: 300px
+         width: 100%
 
 @media (max-width: 714px)
    .step
