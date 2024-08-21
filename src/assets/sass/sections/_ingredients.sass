@@ -1,7 +1,8 @@
 .ingredients
-   margin-top: -60px
-   padding-bottom: 60px
-   background: $light-brown
+   @include section-style($light-brown, 200px)
+   // margin-top: -60px
+   // padding-bottom: 60px
+   // background: $light-brown
    &__wrapper
    &__items
       display: flex
@@ -27,7 +28,7 @@
          width: 100%
 
    &__text
-     
+      width: $text-width
       margin-left: $margin-top
 
    &__links

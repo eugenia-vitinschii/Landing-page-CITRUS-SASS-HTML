@@ -1,5 +1,11 @@
 .footer
-   margin-top: 10px
-   background: $light-blue
-   p
-      color: white
+   @include section-style($light-brown, 200px)
+   &__info-subsc
+      p
+         text-align: center
+   &__info-alert
+      p, a
+         display: block
+         width: 50%
+      p
+         border: 2px solid $dark-green

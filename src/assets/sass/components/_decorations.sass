@@ -3,21 +3,26 @@
    animation: $circle
 
 .top-leaf, .bottom-leaf
+   padding: 100px 0px
    img
       width: 200px
       height: 200px
 
 .top-leaf
+ 
    float: left
    img
       animation: $leaf-top
 
-.bottom-leaf
+.bottom-leaf 
+
    float: right
    img
       animation: $leaf-bottom
 
-
+.decor__wrapper
+   display: flex
+   justify-content: space-between
 
 @media (max-width: 987px)
    .top-circle
@@ -27,3 +32,4 @@
       img
          width: 100px
          height: 100px
+

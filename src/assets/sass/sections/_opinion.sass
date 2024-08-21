@@ -1,0 +1,27 @@
+.opinion
+   @include section-style($dark-green, 200px)
+
+   &__wrapper
+      display: flex
+   &__content
+ 
+
+   &__img
+      display: block
+      position: relative
+      
+
+   &__hand
+      position: absolute
+      top: 60px
+      left: 70px
+      width: 160px
+      z-index: 6
+   &__hand:hover
+      transform: rotate(10deg)
+   &__star
+      right: 30px
+      width: 300px
+      z-index: 4
+      animation: $animation-star
+
