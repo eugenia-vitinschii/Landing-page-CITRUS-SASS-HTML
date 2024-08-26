@@ -1,82 +1,58 @@
-.reviews 
-   @include section-style($light-brown, 200px)
+.reviews
+   @include section-style($light-brown)
    &__wrapper
-   &__top 
+   &__top
       display: flex
       flex-direction: row
       justify-content: space-between
-   &__container 
+   &__container
       display: flex
       flex-direction: row
       justify-content: space-between
-   &__item 
+   &__item
       display: flex
       flex-direction: column
       width: 400px
-  
       padding: 10px
-   &__img 
+   &__img
       img
          width: 200px
-   &__text 
+   &__text
       width: 300px
       height: 200px
-   &__stars 
-      background-image: url('./../img/star-point_icon-icons.com_68483.svg')  
+   &__stars
+      background-image: url('./../img/star-point_icon-icons.com_68483.svg')
       width: 150px
       height: 30px
       margin-top: 5px
       fill: #95ca3a
 
-
 @media (max-width: 987px)
-   .reviews 
-      &__container 
+   .reviews
+      &__container
          display: flex
          flex-direction: column
-      &__item 
+      &__item
          display: flex
          flex-direction: row
          width: 100%
-   
          padding: 10px
          margin-top: $margin-top
       &__message
          display: flex
          flex-direction: column
-      &__img 
+      &__img
          img
             width: 300px
-      &__text 
+      &__text
          width: 100%
-         height: 180px 
+         height: 180px
       &__stars
          margin-top: -10px
 
 
 @media (max-width: 645px)
-   .reviews 
-      &__item 
+   .reviews
+      &__item
          flex-direction: column
          align-items: center
-
-            
-      
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
- 

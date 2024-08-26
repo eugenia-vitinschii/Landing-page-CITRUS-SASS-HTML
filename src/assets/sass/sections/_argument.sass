@@ -1,16 +1,16 @@
 .argument
-   @include section-style($dark-green, 200px)
-   // padding: $margin-top
-   // background: $dark-green
+   @include section-style($dark-green)
    &__wrapper
       text-align: center
-      width:  $wrapper-width
-      min-width: 320px
+      max-width:  $wrapper-width
       margin-left: auto
       margin-right: auto
    &__text
+      width: 100
+ 
       p
          text-align: left
+  
    &__links
       @include link-wrapper()
 

@@ -1,13 +1,15 @@
 .research
-   @include section-style($light-brown, 200px)
-   // background: $light-brown
-   // padding: 200px 0px
+   @include section-style($light-brown)
    &__wrapper
-      display: block
-      margin: 0 auto
-      width: $wrapper-width
-   &__text
       text-align: center
+      width:  100%
+      margin-left: auto
+      margin-right: auto
+  
+   &__text
+      width: 100%
+      p
+         text-align: center
    &__img
       @include img-container()
       img

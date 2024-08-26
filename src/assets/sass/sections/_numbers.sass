@@ -1,7 +1,5 @@
 .numbers
-   @include section-style($light-brown, 200px)
-   // padding: 400px 0px
-   // background: $light-brown
+   @include section-style($light-brown)
    &__wrapper
       padding-top: 40px
       background: $dark-green
@@ -9,27 +7,19 @@
       display: flex
    &__item
       width: 25%
-      border-right: 5px solid white
+      border-right: 5px solid $white
       text-align: center
    &__item:last-child
       border-right: 1px solid $dark-green
-      
+   &__item-txt
+      p
+         text-align: center
 
-
-// .numbers
-
-// 		&__items
-
-// 		&__item
-
-
-// 		&__item-number
-
-
-// 		&__item-txt
-
-
-// .big-heading-white
-
-// .body-text-white
-
+@media (max-width: 714px)
+   .numbers
+      &__items
+         flex-direction: column
+      &__item
+         width: 100%
+         border-right: 0px solid $white
+         border-bottom: 2px solid $white

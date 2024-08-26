@@ -1,75 +1,89 @@
 $circle: circle 5s linear infinite
 
-@keyframes circle 
-	0% 
+@keyframes circle
+	0%
 		transform: rotate(0deg)
-	
-	25% 
+
+	25%
 		transform: rotate(-50deg)
-	50% 
+	50%
 		transform: rotate(50deg)
-	100% 
+	100%
 		transform: rotate(0deg)
 
 $leaf-top: leaf-top 10s linear infinite
 
 @keyframes leaf-top
-	0% 
+	0%
 		transform: translate(0px, 0px)
-	
-	25% 
+
+	25%
 		transform: translate(18px, 43px)
 		opacity: 1
-	
-	50% 
+
+	50%
 		transform: translate(18px, 0px)
 		opacity: 1
-	
-	100% 
-		transform: translate(0px, 0px)
-		opacity: 1
-	
-$leaf-bottom: leaf-top 10s linear infinite
-@keyframes leaf-bottom
-	0% 
-		transform: translate(0px, 0px)
-	
-	25% 
-		transform: translate(-52px, -5px)
-		opacity: 1
-	
-	50% 
-		transform: translate(-52px, 47px)
-		opacity: 1
-	
-	100% 
+
+	100%
 		transform: translate(0px, 0px)
 		opacity: 1
 
+$leaf-bottom: leaf-top 10s linear infinite
+@keyframes leaf-bottom
+	0%
+		transform: translate(0px, 0px)
+
+	25%
+		transform: translate(-52px, -5px)
+		opacity: 1
+
+	50%
+		transform: translate(-52px, 47px)
+		opacity: 1
+
+	100%
+		transform: translate(0px, 0px)
+		opacity: 1
 
 $motivation-keyframes: motivation-animation 5s ease-in-out
 
 @keyframes motivation-animation
 	10%
 		clip-path: ellipse(50% 10% at 50% 50%)
-	20% 
+	20%
 		clip-path: path("M0.7,87.7c0,0,96.2-87.1,213.2-87.1c117,0,221.5,87.1,221.5,87.1s-104.5,83.8-221.5,83.8 C96.9,171.4,0.7,87.7,0.7,87.7")
 	30%
 		clip-path: ellipse(50% 10% at 50% 50%)
-	40% 
+	40%
 		clip-path: path("M0.7,87.7c0,0,96.2-87.1,213.2-87.1c117,0,221.5,87.1,221.5,87.1s-104.5,83.8-221.5,83.8 C96.9,171.4,0.7,87.7,0.7,87.7")
-	
 
 $animation-star: star 10s infinite
 
 @keyframes star
-	0% 
+	0%
 		rotate: (20deg)
-	25% 
+	25%
 		rotate: (200deg)
 	50%
 		rotate: (-100deg)
 	100%
 		rotate: (-20)
 
-			
+$eye-footer: eye 10s ease-in-out infinite
+
+@keyframes eye
+	0%
+		clip-path: ellipse(50% 10% at 50% 50%)
+
+	5%
+		clip-path: ellipse(50% 40% at 50% 50%)
+
+	10%
+		clip-path: ellipse(50% 10% at 50% 50%)
+
+	15%
+		clip-path: ellipse(50% 40% at 50% 50%)
+
+	100%
+		clip-path: ellipse(50% 40% at 50% 50%)

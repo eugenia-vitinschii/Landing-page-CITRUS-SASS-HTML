@@ -1,16 +1,11 @@
 .opinion
-   @include section-style($dark-green, 200px)
-
+   @include section-style($dark-green)
    &__wrapper
       display: flex
    &__content
- 
-
    &__img
       display: block
       position: relative
-      
-
    &__hand
       position: absolute
       top: 60px
@@ -24,4 +19,12 @@
       width: 300px
       z-index: 4
       animation: $animation-star
+   
+@media (max-width: 714px)
+   .opinion
+      &__wrapper
+         flex-direction: column
+         align-items: center
+      &__img
+         margin-top: $margin-top
 

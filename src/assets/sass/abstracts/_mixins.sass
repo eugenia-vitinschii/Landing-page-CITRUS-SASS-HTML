@@ -1,34 +1,55 @@
-@mixin button()
+@mixin font-style($font-size, $padding-top, $text-align, $white)
+   font-size: $font-size
+   padding-top: $padding-top
+   text-align: $text-align
+   color: $white
+
+@mixin button-style($bg, $dark-green, $padding-top, $padding-left)
+   background: $bg
+   color: $white
    text-align: center
-   padding: 20px 30px
+   padding: $padding-top $padding-left
    font-size: $body-text-sm
-   color: $white
    border-radius: $border-radius
-
-@mixin buttonHover()
-   background: $orange
-   color: $white
-
-@mixin animations()
-   transition-duration: 0.9s
-   transition-timing-function: ease
+   border: 1px solid $dark-green
+   transition: $transnision
 
 @mixin img-container()
    display: block
    margin: 0 auto
    max-width: $img-width
 
-
 @mixin link-wrapper()
    text-align: center
    margin-top: $margin-section
    padding-bottom: $margin-top
 
-@mixin section-style($color, $padding)
+@mixin section-style($color)
    background: $color
-   padding: $padding 0px
 
 
-@mixin orange-hover()
-   color: orange
-   
+@mixin input-text($color, $bg, $border-color)
+   color: $color
+   background: $bg
+   border-bottom: 2px solid $border-color
+   font-size: $body-text
+   margin-bottom: 10px
+
+@mixin form-button($border, $bg)
+   width: 30px
+   height: 30px
+   border: 2px solid $border
+   border-radius: 50%
+   background: $bg
+   transnition: all 10s ease-out
+   margin-top: $margin-top
+   margin-bottom:  $margin-top
+
+@mixin form-button-after($color)
+   content: '→'
+   margin-left: 20px
+   margin-top: 6px
+   width: 30px
+   height: 30px
+   color: $color
+   display: inline-block

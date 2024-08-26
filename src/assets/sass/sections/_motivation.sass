@@ -1,5 +1,5 @@
 .motivation
-   @include section-style($light-brown, 0px)
+   @include section-style($light-brown)
    position: relative
    margin-top: -200px
    // background: $light-brown
@@ -22,3 +22,11 @@
    &__txt
       margin: $margin-top
       max-width: 1000px
+
+@media (max-width: 714px)
+   .motivation
+      &__wrapper
+         display: flex
+         flex-direction: column
+      &__text
+         width: 100%
