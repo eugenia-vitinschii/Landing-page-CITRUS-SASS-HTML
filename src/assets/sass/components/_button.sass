@@ -28,3 +28,13 @@
       @include button-style($orange, $orange,15px, 25px)
    .button:active,  .button-blue:active
       @include button-style($black, $orange, 15px, 25px)
+   
+.link-wrapper
+   width: 100%
+   @include link-wrapper()
+
+@media (max-width: 565px)
+   .button, .button-blue
+      display: block
+      margin-top: 20px
+      line-height: 40px

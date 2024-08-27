@@ -3,16 +3,17 @@
    &__wrapper
       display: flex 
       align-items: center
+      justify-content: space-around
       width: 100%
+      max-width:  $wrapper-width
    &__text
-      width: $text-width
+      max-width: $text-width
       margin-left: $margin-top
       p
          width: 100%
-   &__links
-      @include link-wrapper()
    &__img
       @include img-container()
+      margin-left: 10px      
       img
          width: 100%
 
@@ -21,3 +22,10 @@
    .step
       &__wrapper
          flex-direction: column
+      &__img
+         margin: 0px
+         max-width: 100%
+      &__text
+         margin-left: 0px
+         max-width: 100%
+
