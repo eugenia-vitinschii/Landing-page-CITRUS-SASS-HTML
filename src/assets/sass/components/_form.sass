@@ -4,20 +4,20 @@
    &__form-submit
       width: 100%
    &__form-button-green
-      @include form-button($white, $dark-green)
+      @include form-button($white, $crimson)
    &__form-button-green::after
       @include form-button-after($white)
    &__form-button-brown
-      @include form-button($dark-green, $light-brown)
+      @include form-button($crimson, $rose)
    &__form-button-brown::after
-      @include form-button-after($dark-green)
+      @include form-button-after($crimson)
    &__form-button-green:hover
-      @include form-button($orange, $dark-green)
+      @include form-button($orange, $crimson)
    &__form-button-green:hover::after
       @include form-button-after($orange)
       margin-left:30px
    &__form-button-brown:hover
-      @include form-button($orange, $light-brown)
+      @include form-button($orange, $rose)
    &__form-button-brown:hover::after
       @include form-button-after($orange)
       margin-left:30px
