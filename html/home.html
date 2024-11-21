@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>The citrus</title>
    <link rel="stylesheet" href="../src/assets/css/app.css">
-   <script src="../js/index.js"></script>
 </head>
 
 <body>
    <div class="wrapper">
-      <div class="header">
+      <header class="header">
          <div class="container">
             <div class="header__wrapper">
+                <div class="header__logo">
+                  <img src="../src/assets/img/logo.jpg" alt="">
+               </div>
                <nav class="header__nav">
                   <ul>
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">Shop</a></li>
-                     <li><a href="#">Delivery</a></li>
+                     <li><a href="#reviews">Reviews</a></li>
+                     <li><a href="#ingredients">Ingredients</a></li>
+                     <li><a href="#why">WHY CITRUS?</a></li>
+                     <li><a href="#argument">Arguments</a></li>
+                     <li><a href="#costs">Citrus costs</a></li>
+                     <li><a href="#faq">FAQ</a></li>
                   </ul>
                </nav>
             </div>
-         </div>        
-      </div>
+         </div>
+      </header>
+      <div class="burger"><span></span></div>
       <div class="content">
          <div class="start section">
             <div class="start__shadow">
@@ -48,7 +55,7 @@
                </path>
             </svg>
          </div>
-         <div class="reviews section">
+         <div id="reviews" class="reviews section">
             <div class="decor__wrapper">
                <div class="top-circle">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
@@ -170,7 +177,7 @@
                </path>
             </svg>
          </div>
-         <div class="ingredients section">
+         <div id="ingredients" class="ingredients section">
             <div class="container">
                <div class="ingredients__wrapper">
                   <h3 class="big-heading-green">Making the task more difficult</h3>
@@ -233,7 +240,7 @@
                </path>
             </svg>
          </div>
-         <div class="argument section">
+         <div id="argument" class="argument section">
             <div class="container">
                <div class="argument__wrapper">
                   <div class="argument__text">
@@ -258,8 +265,8 @@
 
                </div>
             </div>
-         </div> 
-         <div class="wave-brown">
+         </div>
+         <div id="why" class="wave-brown">
             <svg width="100%" min-height="150px" viewBox="0 120 1440 150" xmlns="http://www.w3.org/2000/svg">
                <path
                   d="M 0,400 C 0,400 0,200 0,200 C 205.71428571428572,257.14285714285717 822.8571428571429,228.57142857142858 1440,200 C 1440,200 1440,400 1440,400 Z"
@@ -411,7 +418,7 @@
                </div>
             </div>
          </div>
-         <div class="prices section">
+         <div id="costs" class="prices section">
             <div class="top-leaf">
                <img src="../src/assets/img/flower-1.jpg" alt="leaf">
             </div>
@@ -475,10 +482,10 @@
                               email us your address to be notified as soon as it is ready!</p>
                            <form action="#" class="the__form">
                               <div class="the__form-submit">
-                                     <input class="the__form-input green-input" type="text" placeholder="E-mail">
-                              <button type="submit" class="the__form-button-green"></button>
+                                 <input class="the__form-input green-input" type="text" placeholder="E-mail">
+                                 <button type="submit" class="the__form-button-green"></button>
                               </div>
-                          
+
                               <br>
                               <input class="the__form-checkbox custom-checkbox" id="agree-promo" type="checkbox"
                                  name="agree">
@@ -501,7 +508,7 @@
                   fill="#cbb79b"></path>
             </svg>
          </div>
-         <div class="questions section">
+         <div id="faq" class="questions section">
             <div class="container">
                <div class="questions__wrapper">
                   <div class="questions___item">
@@ -578,11 +585,12 @@
                      <!-- ul>li*2>a -->
                      <a href="#" class="button">Shop</a>
                      <ul>
-                        <li><a href="#" class="body-text-green">Blog</a></li>
-                        <li><a href="#" class="body-text-green">Contact</a></li>
-                        <li><a href="#" class="body-text-green">My Account</a></li>
-                        <li><a href="#" class="body-text-green">Reviews</a></li>
-                        <li><a href="#" class="body-text-green">FAQ</a></li>
+                        <li><a href="#reviews" class="body-text-green">Reviews</a></li>
+                        <li><a href="#ingredients" class="body-text-green">Ingredients</a></li>
+                        <li><a href="#why" class="body-text-green">WHY CITRUS?</a></li>
+                        <li><a href="#argument" class="body-text-green">Arguments</a></li>
+                        <li><a href="#costs" class="body-text-green">Citrus costs</a></li>
+                        <li><a href="#faq"class="body-text-green">FAQ</a></li>
                         <li><a href="#" class="body-text-green">Shipping & Returns</a></li>
                         <li><a href="#" class="body-text-green">Privacy Policy</a></li>
                      </ul>
@@ -625,5 +633,6 @@
 
       </div>
    </div>
-
+</body>
+<script src="../js/index.js"></script>
 </html>
