@@ -1,58 +1,69 @@
-.big-heading-white
-   @include font-style($big-heading, 0px, center, $white)
+// red font styles
+.big-heading-crimson
+   @include font-style( 0px, center, $crimson)
+   font-size: $big-heading
 
-.big-heading-green
-   @include font-style($big-heading, 0px, center, $crimson)
+.heading-crimson
+   @include font-style($margin-sm, center, $crimson)
+   font-size:  $heading
 
-   //@include font-style($font-size, $padding-top, $text-align, $white)
-.heading-white
-   @include  font-style($heading, $margin-sm, center, $white)
-
-.heading-green
-   @include font-style($heading, $margin-sm, center, $crimson)
-
-
-.subheading-white
-   @include font-style($subheading, 0px, left, $white)
+.subheading-crimson
+   @include font-style( 0px, left, $crimson)
+   font-size:  $subheading
    margin-top: $margin-sm
 
-.subheading-green
-   @include font-style($subheading, 0px, left, $crimson)
-   margin-top: $margin-sm
- 
-   
-.body-text-white
-   @include font-style($body-text, 0px, left, $white)
+.body-text-crimson
+   @include font-style(0px, left, $crimson)
+   font-size: $body-text
    margin-top: $margin-sm
    line-height: 20px
 
-.body-text-green
-   @include font-style($body-text, 0px, left, $crimson)
+
+.sm-text-green
+   @include font-style( 0px, left, $crimson)
+   font-size: 12px
+   line-height: 20px
+
+//White font classes
+.big-heading-white
+   @include font-style(0px, center, $white)
+   font-size: $big-heading
+
+.heading-white
+   @include  font-style( $margin-sm, center, $white)
+   font-size:$heading
+
+.subheading-white
+   @include font-style(0px, left, $white)
+   font-size: $subheading
+   margin-top: $margin-sm
+
+.body-text-white
+   @include font-style(0px, left, $white)
+   font-size: $body-text
    margin-top: $margin-sm
    line-height: 20px
 
 .sm-text-white
-   @include font-style(12px, 0px, left, $white)
+   @include font-style(0px, left, $white)
+   font-size: 12px
 
-.sm-text-green
-   @include font-style(12px, 0px, left, $crimson)
-   line-height: 20px
-
-
+// rsponsive text
 @media (max-width: 767px)
-   .big-heading-white, .big-heading-green
+   .big-heading-white, .big-heading-crimson
       font-size: $big-heading-sm
       line-height: normal
    
-   .heading-white, .heading-green
+   .heading-white, .heading-crimson
       font-size: $heading-sm
    
-   .subheading-white, .subheading-green
+   .subheading-white, .subheading-crimson
       font-size: $subheading-sm
    
-   .body-text-white, .body-text-green
+   .body-text-white, .body-text-crimson
       font-size: $body-text-sm
    
+//adtional font styles
 .bold
    font-weight: bold
    
