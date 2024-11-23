@@ -185,7 +185,7 @@
                   <div class="ingredients__items">
                      <div class="ingredients__item">
                         <div class="ingredients__img">
-                           <img src="../src/assets/img/greenTea.png" alt="ingridient">
+                           <img src="../src/assets/img/greenTea.png" alt="ingredient">
                         </div>
                         <div class="ingredients__text">
                            <p class="body-text-crimson">L-Theanine, 200 mg</p>
@@ -195,7 +195,7 @@
                      </div>
                      <div class="ingredients__item">
                         <div class="ingredients__img">
-                           <img src="../src/assets/img/student.png" alt="ingridient">
+                           <img src="../src/assets/img/student.png" alt="ingredient">
                         </div>
                         <div class="ingredients__text">
                            <p class="body-text-crimson">Bacopa Monnieri, 300 mg</p>
@@ -205,7 +205,7 @@
                      </div>
                      <div class="ingredients__item">
                         <div class="ingredients__img">
-                           <img src="../src/assets/img/rhodiola.png" alt="ingridient">
+                           <img src="../src/assets/img/rhodiola.png" alt="ingredient">
                         </div>
                         <div class="ingredients__text">
                            <p class="body-text-crimson">Rhodiola Rosea, 100 mg</p>
@@ -216,7 +216,7 @@
                      </div>
                      <div class="ingredients__item">
                         <div class="ingredients__img">
-                           <img src="../src/assets/img/work.png" alt="ingridient">
+                           <img src="../src/assets/img/work.png" alt="ingredient">
                         </div>
                         <div class="ingredients__text">
                            <p class="body-text-crimson">Panax Ginseng, 60 mg</p>
@@ -226,7 +226,7 @@
                         </div>
                      </div>
                      <div class="ingredients__links link-wrapper">
-                        <a href="#" class="button">Why these ingredients? </a>
+                        <button id="ingredient-open"  class="button">Why these ingredients? </button>
                         <a href="#" class="button">See additives label</a>
                      </div>
                   </div>
@@ -599,7 +599,7 @@
                      <div class="footer__social-media-bg">
                         <svg class="eye-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 172">
                            <path fill="#ffffff" d="M1 1H436V171H1z" />
-                           <path class="eye-iris" fill="#89023e"
+                           <path class="eye-iris" fill="#003399"
                               d="M294,86.1c0,42.4-34.4,76.8-76.8,76.8c-42.4,0-76.8-34.4-76.8-76.8c0-42.4,34.4-76.8,76.8-76.8 C259.6,9.2,294,43.6,294,86.1" />
                            <g class="eye-hover-group">
                               <path fill="transparent" d="M1 1H436V171H1z" />
@@ -632,15 +632,58 @@
          </div>
 
       </div>
-      <div id="purchase" class="purchase">
+      <div id="purchase" class="popup purchase">
          <div class="container">
-            <div class="purchase__wrapper">
-               <div class="purchase__content">
-                  <button id="purchase-close" class="purchase__button">
+            <div class="popup__wrapper purchase__wrapper">
+               <div class="popup__conntent purchase__content">
+                  <button id="purchase-close" class="popup__button">
                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#89023e"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                   </button>
                   <div class="purchase__form">
-
+                     <form action="#" class="the__form">
+                        <input class="the__form-input brown-input" type="text" placeholder="Name">
+                        <input class="the__form-input brown-input" type="text" placeholder="E-mail">
+                        <button type="submit" class="the__form-button-brown"></button>
+                        <br>
+                        <input class="the__form-checkbox custom-checkbox" id="agree" type="checkbox" name="agree" checked>
+                        <label class="sm-text-green" for="agree">By subscribing, you agree to our Privacy Policy. You
+                           can unsubscribe at any time.</label>
+                     </form>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="ingredient" class="popup ingredient">
+            <div class="container">
+               <div class="popup__wrapper">
+                  <div class="popup__content">
+                     <button id="ingredient-close" class="popup__button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#89023e"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                     </button>
+                     <div class="ingredient__content">
+                        <div class="ingredient__buttons">
+                           <button class="ingredient__button show">1</button>
+                           <button class="ingredient__button">2</button>
+                           <button class="ingredient__button">3</button>
+                           <button class="ingredient__button">4</button>
+                           <div class="ingredient__line"></div>
+                        </div>
+                        <div class="ingredient__box">
+                           <div class="ingredient__box-item show">
+                              <p>1</p>
+                           </div>
+                           <div class="ingredient__box-item">
+                              <p>2</p>
+                           </div>
+                           <div class="ingredient__box-item">
+                              <p>3</p>
+                           </div>
+                           <div class="ingredient__box-item">
+                              <p>4</p>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -650,4 +693,5 @@
 </body>
 <script src="../js/index.js"></script>
 <script src="../js/popup.js"></script>
+<script src="../js/tabs.js"></script>
 </html>

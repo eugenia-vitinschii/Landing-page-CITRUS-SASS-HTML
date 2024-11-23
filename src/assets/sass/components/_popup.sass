@@ -1,5 +1,5 @@
-.purchase
-   display: none
+//popup styles
+.popup
    position: fixed
    justify-content: center
    align-items: center
@@ -10,15 +10,51 @@
    height: 100%
    background: rgba(0, 0, 0, 0.5)
    &__wrapper
-   &__content
       width: 500px
       padding: 30px
       margin: 5px
       background: $rose
       border-radius: $border-radius
+   &__content
    &__button
+      float: right
       background: $rose
       border: 0px solid white
 
+.purchase
+   display: none
+
 .purchase.open
    display: flex
+
+.ingredient
+   display: flex
+
+.ingredient.open
+   display: flex
+
+
+.ingredient
+   &__content
+   &__buttons 
+   &__button
+      width: 90px
+      color: red
+   &__button.show
+      color: black
+   &__button
+   &__line
+      top: 10px
+      left: 0
+      width: 90px
+      height: 3px
+      background: blue
+      transition: $transnision
+   &__box-item
+      display: blok
+   &__box-item.show
+      display: none
+   &__box-item
+
+
+
