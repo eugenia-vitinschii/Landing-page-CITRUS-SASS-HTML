@@ -20,10 +20,12 @@ const ingredients = document.getElementById('ingredient');
 
 openIngredients.addEventListener( 'click', () => {
    ingredients.classList.add("open");
+   console.log('open')
 });
 
 closeIngredients.addEventListener( 'click', ()=> {
    ingredients.classList.remove('open');
+   console.log('cloase')
 });
 
 

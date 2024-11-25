@@ -28,7 +28,7 @@
    display: flex
 
 .ingredient
-   display: flex
+   display: none
 
 .ingredient.open
    display: flex
@@ -36,24 +36,32 @@
 
 .ingredient
    &__content
+      top: 20px
+      position: relative
    &__buttons 
    &__button
       width: 90px
-      color: red
+      color: $white
+      background: $rose
+      border: 0px solid transparent
+      font-size: $body-text
    &__button.show
-      color: black
+      color: $crimson
    &__button
    &__line
-      top: 10px
+      position: absolute
+      top: 40px
       left: 0
       width: 90px
       height: 3px
-      background: blue
+      background: $crimson
       transition: $transnision
    &__box-item
-      display: blok
-   &__box-item.show
       display: none
+      p
+         text-align: left
+   &__box-item.show
+      display: block
    &__box-item
 
 
