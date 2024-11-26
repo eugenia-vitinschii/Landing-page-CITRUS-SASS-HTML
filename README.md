@@ -11,4 +11,5 @@ $\color{#89023e}{\textsf{Responsive landing page Citrus}}$
 ![Static Badge](https://img.shields.io/badge/JavaScript-89023e?style=flat&logo=javascript&logoColor=fff)
 
 
-<img width="663" alt="Снимок экрана 2024-08-27 в 20 54 31" src="https://github.com/user-attachments/assets/12206d82-45cc-429a-ba40-809bf0f57433">
+
+![citrus-git](https://github.com/user-attachments/assets/4b7629de-8284-4433-94a5-9a2d1705a40b)
