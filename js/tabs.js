@@ -8,7 +8,6 @@ tabs.forEach((tab, index) => {
 
     tab.classList.add("show");
 
-
     let line = document.querySelector(".ingredient__line");
     line.style.width = e.target.offsetWidth + "px";
     line.style.left = e.target.offsetLeft + "px";
