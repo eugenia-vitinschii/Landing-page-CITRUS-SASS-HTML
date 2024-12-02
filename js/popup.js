@@ -27,7 +27,3 @@ closeIngredients.addEventListener( 'click', ()=> {
    ingredients.classList.remove('open');
    console.log('cloase')
 });
-
-
-
- 

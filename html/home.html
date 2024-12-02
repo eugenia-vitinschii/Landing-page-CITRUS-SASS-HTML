@@ -738,9 +738,13 @@
 <script src="../js/popup.js"></script>
 <script src="../js/tabs.js"></script>
 <script src="../js/form.js"></script>
-<script src="../js/animation.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-   AOS.init();
+   AOS.init({
+  offset: 200,
+  duration: 600,
+  easing: 'ease-in-quad',
+  delay: 80,
+});
  </script>
 </html>
