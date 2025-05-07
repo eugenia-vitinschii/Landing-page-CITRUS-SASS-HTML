@@ -7,8 +7,8 @@
 
 ## 🔗 Demo Video
 
-▶️ [Watch on YouTube]([https://www.youtube.com/watch?v=ТВОЙ_КОД](https://youtu.be/rM7m6U3Ms4Y))  
- 
+▶️ [Watch on YouTube](https://youtu.be/rM7m6U3Ms4Y)  
+
 #### This is a bright and modern landing page built with HTML5, Sass, and vanilla JavaScript.
 The layout includes smooth SVG wave transitions, animated popups, and custom keyframe animations that enhance user engagement.
 
